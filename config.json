@@ -1,0 +1,52 @@
+{
+  "ollama": {
+    "base_url": "http://localhost:11434",
+    "model": "qwen2.5:3b",
+    "temperature": 0.6,
+    "max_context_chars": 3500
+  },
+  "screen_ocr": {
+    "enabled": true,
+    "interval_seconds": 2.0,
+    "region": {
+      "left": 679,
+      "top": 252,
+      "width": 376,
+      "height": 701
+    },
+    "tesseract_cmd": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+    "language": "chi_sim+eng",
+    "min_text_length": 2
+  },
+  "speech": {
+    "enabled": false,
+    "interval_seconds": 5,
+    "sample_rate": 16000,
+    "device_index": null,
+    "model_size": "small",
+    "language": "zh"
+  },
+  "assistant_profile": {
+    "software_positioning": "A real-time AI livestream copilot for all types of streamers.",
+    "streamer_type": "ecommerce / gaming / education / entertainment / local services / course sales / other",
+    "platform": "TikTok / Douyin / YouTube / Instagram / Xiaohongshu / Taobao / other",
+    "language_rule": "Reply in the same language as the viewer comment. If unclear, reply in Chinese.",
+    "target_audience": "General livestream viewers",
+    "live_goal": "Increase interaction, answer questions naturally, and help the streamer keep talking.",
+    "brand_name": "",
+    "industry": "",
+    "main_products_or_topics": [],
+    "key_selling_points": [],
+    "faq": [],
+    "tone": "short, natural, friendly, confident, human-like, not pushy",
+    "rules": [
+      "Only output the exact sentence the streamer can say.",
+      "Keep it to one or two short sentences.",
+      "Do not mention that you are an AI.",
+      "Do not invent product facts, discounts, stock, shipping time, or return policy.",
+      "If information is unknown, guide the viewer to check the product page or ask customer service.",
+      "Do not make medical, financial, legal, or guaranteed-result claims.",
+      "Do not attack competitors."
+    ]
+  }
+}
